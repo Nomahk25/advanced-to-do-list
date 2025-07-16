@@ -1,0 +1,163 @@
+:root {
+  --bg-color: #0a1a2f;
+  --text-color: #ffffff;
+  --card-bg: #12263a;
+  --button-bg: #007bff;
+  --delete-btn: #dc3545;
+}
+
+[data-theme="dark"] {
+  --bg-color: #0a1a2f;
+  --text-color: #ffffff;
+  --card-bg: #12263a;
+}
+
+
+[data-theme="light"] {
+  --bg: var(--bg-light);
+  --text: var(--text-light);
+}
+
+[data-theme="dark"] {
+  --bg: var(--bg-dark);
+  --text: var(--text-dark);
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.app {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+.theme-toggle button {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 8px;
+  background: var(--accent);
+  color: white;
+  cursor: pointer;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+form input,
+form select,
+form button {
+  padding: 0.7rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: var(--accent);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+section#tasksSection {
+  margin-top: 2rem;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+}
+
+#taskList li {
+  background: rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.task-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.task-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.task-category {
+  font-size: 0.9rem;
+  opacity: 0.75;
+}
+
+.task-date {
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.priority-low {
+  color: var(--priority-low);
+}
+
+.priority-medium {
+  color: var(--priority-medium);
+}
+
+.priority-high {
+  color: var(--priority-high);
+}
+
+#taskList li button {
+  background: crimson;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+button {
+  background-color: var(--button-bg);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
