@@ -2,7 +2,7 @@
 
 A sleek, responsive and installable To-Do List app built with HTML, CSS, and JavaScript — with support for categories, due dates, dark/light mode, offline access, and local storage.
 
-![Screenshot](assets/screenshot.png)
+/assets/screenshot.png
 
 ---
 
