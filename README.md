@@ -28,30 +28,31 @@ A sleek, responsive and installable To-Do List app built with HTML, CSS, and Jav
 3. Right-click `index.html` → `Open with Live Server`
 
 ### Option 2: Using Python HTTP Server
-```bash
+
+```
 cd todo-app
 python -m http.server 5500
+```
 Visit http://***.*.*.*:****
 
-📱 Install as App (PWA)
-Open the app in Chrome
+## 📱 Install as App (PWA)
 
-Click the Install icon (+) in the address bar
+- Open the app in Chrome
+- Click the Install icon (+) in the address bar
+- Use it offline as a standalone app!
 
-Use it offline as a standalone app!
+## 🧠 Future Enhancements
 
-🧠 Future Enhancements
-✔ Mark tasks as completed ✅
+- ✔ Mark tasks as completed ✅
+- 🔍 Search/filter by keyword or due date
+- 🔔 Notification/reminders for tasks
+- 📊 Analytics: Completed vs. pending
 
-🔍 Search/filter by keyword or due date
+## 👤 Author
 
-🔔 Notification/reminders for tasks
-
-📊 Analytics: Completed vs. pending
-
-👤 Author
 Made with 💻 by Nomanguni in Johannesburg
 🌐 GitHub Profile
 
-📝 License
+## 📝 License
+
 This project is licensed under the MIT License — free to use, modify, and share.
